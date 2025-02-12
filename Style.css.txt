@@ -1,0 +1,43 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 2em;
+}
+
+#sudoku-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#sudoku-board {
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+}
+
+#sudoku-board td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 1.5em;
+    background-color: #fff;
+}
+
+#sudoku-board td:nth-child(3n) {
+    border-right: 2px solid #000;
+}
+
+#sudoku-board tr:nth-child(3n) td {
+    border-bottom: 2px solid #000;
+}
